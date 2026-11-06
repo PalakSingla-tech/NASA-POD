@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Picture of the Day</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>NASA Picture of the Day</h1>
+        </header>
+
+        <main class="content-wrapper">
+            <section class="form-section">
+                <h2>Search for a Picture of the Day</h2>
+                <form id="search-form" onsubmit="return false;">
+                    <label for="search-input">Select Date:</label>
+                    <div class="input-group">
+                        <input type="date" id="search-input" required />
+                        <button type="submit" id="search-btn">Search</button>
+                    </div>
+                </form>
+
+                <div class="history-container">
+                    <h2>Past Searches</h2>
+                    <ul id="search-history"></ul>
+                </div>
+            </section>
+
+            <section id="current-image-container" class="display-container">
+                <p class="placeholder-text">Loading Picture of the Day...</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
